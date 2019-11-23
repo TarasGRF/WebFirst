@@ -4,5 +4,8 @@
   ],
   "lesson_6": [
     "./src/lesson_6/lesson_6.js"
+  ],
+  "antarctica": [
+    "./src/antarctica/antarctica.js"
   ]
 }
