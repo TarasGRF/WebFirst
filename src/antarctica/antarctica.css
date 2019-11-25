@@ -55,3 +55,22 @@
     display: none;
   }
 }
+
+.love {
+  display: flex;
+  flex-direction: column;
+}
+
+.love__text {
+  display: flex;
+  flex-direction: column;
+}
+.love__text h3 {
+  align-self: center;
+  margin-top: 50px;
+}
+.love__text p {
+  align-self: center;
+  margin-top: 50px;
+  width: 600px;
+}
