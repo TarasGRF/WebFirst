@@ -107,3 +107,40 @@
 .line {
   border: 1px solid rgb(250, 250, 250);
 }
+
+.love-text-photo {
+  align-self: flex-end;
+}
+.love-text-photo p {
+  position: relative;
+  top: 150px;
+  left: -200px;
+  width: 300px;
+  border: 1px solid black;
+  z-index: 2;
+}
+.love-text-photo img {
+  position: relative;
+  top: -120px;
+  height: 300px;
+  z-index: 1;
+}
+.love-text-photo__bottom {
+  align-self: flex-start;
+  height: 300px;
+}
+.love-text-photo__bottom p {
+  position: relative;
+  top: 20px;
+  left: 300px;
+  width: 300px;
+  border: 1px solid black;
+  z-index: 2;
+}
+.love-text-photo__bottom img {
+  position: relative;
+  top: -220px;
+  left: 140px;
+  height: 300px;
+  z-index: 1;
+}
