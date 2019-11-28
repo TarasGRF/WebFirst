@@ -1,0 +1,36 @@
+$parent-size: 300px;
+$base-color: rgb(139, 55, 55);
+
+@mixin square($size, $color) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  //   transform: translate(-50% -50%);
+}
+
+.parent {
+  @include square($parent-size, red);
+  position: relative;
+}
+
+.child {
+  @include square(50%, $base-color);
+  @include absolute-center();
+}
+.child__grand-child {
+  @include square(50%, orange);
+  @include absolute-center();
+}
+
+$colors: red, orange, blue, green;
+@each $color in $colors {
+  .lighter__ligth-#{$color} {
+    background-color: $color;
+  }
+}

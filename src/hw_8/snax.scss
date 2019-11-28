@@ -1,0 +1,43 @@
+@font-face {
+  font-family: logo;
+  src: url(../hw_8/assets/assets/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e6fwniDtzM.woff)
+    format("woff");
+}
+
+@mixin font_logo($size) {
+  font-size: $size;
+  font-family: "logo";
+}
+
+.str {
+  &__logo {
+    font-weight: 900;
+    flex-grow: 8;
+    padding-left: 30px;
+    @include font_logo(16px);
+  }
+  &__string {
+    font-weight: 500;
+    flex-grow: 1;
+    @include font_logo(15px);
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  position: static;
+  height: 50px;
+  background-color: white;
+}
+
+.section {
+  height: 300px;
+  background-color: orange;
+  & h1 {
+    @include font_logo(50px);
+    color: papayawhip;
+  }
+}

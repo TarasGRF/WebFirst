@@ -7,5 +7,11 @@
   ],
   "antarctica": [
     "./src/antarctica/antarctica.js"
+  ],
+  "lesson_8": [
+    "./src/lesson_8/lesson_8.js"
+  ],
+  "hw_8": [
+    "./src/hw_8/hw_8.js"
   ]
 }
