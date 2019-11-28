@@ -34,10 +34,23 @@
 }
 
 .section {
-  height: 300px;
+  height: 500px;
   background-color: orange;
-  & h1 {
-    @include font_logo(50px);
-    color: papayawhip;
+  &__element {
+    & h1 {
+      @include font_logo(50px);
+      color: papayawhip;
+      position: absolute;
+      top: 150px;
+      left: 200px;
+    }
+    & h3 {
+      color: papayawhip;
+      position: absolute;
+      top: 160px;
+      left: 300px;
+      font-style: oblique;
+      @include font_logo(10px);
+    }
   }
 }
