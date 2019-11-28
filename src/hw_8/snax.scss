@@ -36,21 +36,63 @@
 .section {
   height: 500px;
   background-color: orange;
+  display: flex;
+  justify-content: row;
+
   &__element {
+    display: flex;
+    width: 50%;
+    align-items: center;
     & h1 {
       @include font_logo(50px);
       color: papayawhip;
-      position: absolute;
-      top: 150px;
-      left: 200px;
+      position: relative;
+      top: -20%;
+      left: 25%;
     }
     & h3 {
       color: papayawhip;
-      position: absolute;
-      top: 160px;
-      left: 300px;
+      position: relative;
+      top: -27%;
+      left: 20%;
       font-style: oblique;
       @include font_logo(10px);
+    }
+    & p {
+      @include font_logo(30px);
+      width: 200px;
+      position: relative;
+      top: -5%;
+      left: -20%;
+      color: papayawhip;
+    }
+    & img {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+.section1 {
+  height: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: row;
+
+  &__element {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    & img {
+      width: 90%;
+      height: 90%;
+    }
+    & p {
+      @include font_logo(30px);
+      width: 200px;
+      position: relative;
+      top: 45%;
+      left: -20%;
+      color: papayawhip;
     }
   }
 }
