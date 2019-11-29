@@ -13,5 +13,8 @@
   ],
   "hw_8": [
     "./src/hw_8/hw_8.js"
+  ],
+  "first_js": [
+    "./src/first_js/first_js.js"
   ]
 }

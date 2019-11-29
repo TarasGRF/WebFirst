@@ -28,7 +28,8 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  position: static;
+  position: sticky;
+  top: 0px;
   height: 50px;
   background-color: white;
 }
@@ -80,19 +81,24 @@
 
   &__element {
     display: flex;
+    flex-direction: column;
     width: 50%;
-    align-items: center;
+
     & img {
       width: 90%;
       height: 90%;
+      align-items: center;
     }
-    & p {
-      @include font_logo(30px);
-      width: 200px;
+    & h1 {
+      @include font_logo(40px);
       position: relative;
-      top: 45%;
-      left: -20%;
-      color: papayawhip;
+      top: 5%;
+      left: 10%;
+      color: black;
+      flex-grow: 1;
+    }
+    & ul {
+      flex-grow: 7;
     }
   }
 }
