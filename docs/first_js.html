@@ -13,7 +13,130 @@
   <body>
     <h1>Hello from first_js</h1>
     <script>
-      alert("Hello");
+      // const name = prompt("Enter word:");
+      // let constUp = "";
+      // for (let i = 0; i < name.length; i++) {
+      //   i != name.length - 1
+      //     ? (constUp += name[i].toUpperCase() + "-")
+      //     : (constUp += name[i].toUpperCase());
+      // }
+      // alert(constUp);
+      // console.log(constUp);
+      // let n = 0;
+      // const name = prompt("Enter word:");
+      // for (let i = 0; i < name.length; i++) {
+      //   if (
+      //     name[i] == "a" ||
+      //     name[i] == "e" ||
+      //     name[i] == "i" ||
+      //     name[i] == "y" ||
+      //     name[i] == "u" ||
+      //     name[i] == "o"
+      //   )
+      //     n++;
+      // }
+      // console.log(n);
+
+      //task  #1
+      let randomBodyParts = ["глаз", "нос", "череп", "палец", "живот"];
+      let randomAdjectives = [
+        "вонючая",
+        "унылая",
+        "дурацкая",
+        "милая",
+        "красивая",
+        "обаятельная"
+      ];
+      let randomWords = [
+        "муха",
+        "выдра",
+        "дубина",
+        "мартышка",
+        "крыса",
+        "панда",
+        "черепаха",
+        "улитка"
+      ];
+      let randomBodyPatr =
+        randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
+      let randomAjective =
+        randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)];
+      let randomWord =
+        randomWords[Math.floor(Math.random() * randomWords.length)];
+      console.log(
+        "Твой " + randomBodyPatr + " как " + randomAjective + " " + randomWord
+      );
+
+      //tast #2
+      let randomBodyHumanParts = ["глаз", "нос", "череп", "палец", "живот"];
+      let randomHumanAdjectives = [
+        "вонючий",
+        "унылый",
+        "дурацкий",
+        "милый",
+        "красивый",
+        "обаятельный",
+        "веселый",
+        "ласковый"
+      ];
+      let randomAnimals = [
+        "мухи",
+        "выдры",
+        "дубины",
+        "мартышки",
+        "крысы",
+        "панды",
+        "черепахи",
+        "улитки"
+      ];
+      console.log(
+        "У тебя " +
+          randomBodyHumanParts[
+            Math.floor(Math.random() * randomBodyHumanParts.length)
+          ] +
+          " еще более " +
+          randomHumanAdjectives[
+            Math.floor(Math.random() * randomHumanAdjectives.length)
+          ] +
+          ", чем " +
+          randomHumanAdjectives[
+            Math.floor(Math.random() * randomHumanAdjectives.length)
+          ] +
+          " " +
+          randomBodyHumanParts[
+            Math.floor(Math.random() * randomBodyHumanParts.length)
+          ] +
+          " у " +
+          randomAnimals[Math.floor(Math.random() * randomAnimals.length)]
+      );
+
+      //task #3
+
+      result = [
+        "У тебя",
+        randomBodyHumanParts[
+          Math.floor(Math.random() * randomBodyHumanParts.length)
+        ],
+        "еще более",
+        randomHumanAdjectives[
+          Math.floor(Math.random() * randomHumanAdjectives.length)
+        ],
+        ", чем ",
+        randomHumanAdjectives[
+          Math.floor(Math.random() * randomHumanAdjectives.length)
+        ],
+        randomBodyHumanParts[
+          Math.floor(Math.random() * randomBodyHumanParts.length)
+        ],
+        "у",
+        randomAnimals[Math.floor(Math.random() * randomAnimals.length)] + "!!!"
+      ].join(" ");
+      console.log(result);
+
+      //task #4
+
+      let array = [3, 2, 1];
+      console.log(array.join(" больше, чем "));
     </script>
   <script type="text/javascript" src="/first_js.js"></script></body>
 </html>
