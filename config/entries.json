@@ -16,5 +16,8 @@
   ],
   "first_js": [
     "./src/first_js/first_js.js"
+  ],
+  "hangman": [
+    "./src/hangman/hangman.js"
   ]
 }
