@@ -12,23 +12,34 @@
   </head>
   <body>
     <script>
-      let words = ["hello", "sunny", "paint", "build"];
+      let words = ["hello", "sunny", "paint", "build", "hunny", "baby"];
       let word = words[Math.floor(Math.random() * words.length)];
       console.log(words);
       console.log(word);
-      // let answerArray = [];
-      // for (let i = 0; i < word.length; i++) {
-      //   answerArray[i] = "_";
-      // }
-      // let remainingLetter = word.length;
-      // while (remainingLetter > 0) {
-      //   //alert(answerArray.join(" "));
-      //   let guess = prompt("Enter char:");
-      //   if (guess.length === 0) break;
-      //   else if (guess.length !== 1) alert("Enter only one char!");
-      //   else {
-      //   }
-      // }
+      let answerArray = [];
+      for (let i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+      }
+
+      let remainingLetter = word.length;
+      let shots = 10;
+      while (remainingLetter > 0 && shots > 0) {
+        alert(answerArray.join(" ") + "     You have " + shots-- + " shots");
+        let guess = prompt("Enter char:");
+        guess = guess.toLowerCase();
+        if (guess.length === 0) break;
+        else if (guess.length !== 1) alert("Enter only one char!");
+        else {
+          for (let j = 0; j < word.length; j++) {
+            if (word[j] === guess && answerArray[j] !== guess) {
+              answerArray[j] = guess;
+              remainingLetter--;
+            }
+          }
+        }
+      }
+      if (remainingLetter === 0) alert("Owefull !! Word was: " + word);
+      if (remainingLetter > 0 || shots === 0) alert("You losed!");
     </script>
   </body>
 </html>
