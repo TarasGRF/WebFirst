@@ -19,5 +19,8 @@
   ],
   "hangman": [
     "./src/hangman/hangman.js"
+  ],
+  "second_js": [
+    "./src/second_js/second_js.js"
   ]
 }

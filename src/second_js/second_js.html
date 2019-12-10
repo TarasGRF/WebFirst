@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://localhost:35729/livereload.js"></script>
+    <title key="title"></title>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <h1 id="heading">Hello from second_js</h1>
+    <script>
+      $("body").keydown(function(event) {
+        console.log(event.keyCode);
+      });
+    </script>
+    <!-- <script>
+      let Car = function(x, y) {
+        this.x = x;
+        this.y = y;
+      };
+      let drawCar = function(car) {
+        let carHtml = '<img src="../../assets/images/car.jpg" >';
+
+        let carElement = $(carHtml);
+        carElement.css({
+          position: "absolute",
+          left: car.x,
+          top: car.y
+        });
+        $("body").append(carElement);
+      };
+      let tesla = new Car(100, 100);
+      let tesla1 = new Car(200, 200);
+      drawCar(tesla);
+      drawCar(tesla1);
+    </script> -->
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let leftOffset = 0;
+      let topOffset = 0;
+
+      let key = "right";
+      let flag = 1;
+      let time = 70;
+
+      let handler = function() {
+        flag++;
+        time /= 2;
+        if (flag > 3) {
+          clearInterval(id);
+          flag = 1;
+          time = 70;
+        }
+        id = setInterval(move, time);
+      };
+
+      let move = function() {
+        if (key === "right") {
+          $("#heading").offset({ left: leftOffset });
+          leftOffset++;
+          if (leftOffset > 200) key = "down";
+        }
+        if (key === "down") {
+          $("#heading").offset({ top: topOffset });
+          topOffset++;
+          if (topOffset > 200 && leftOffset > 200) key = "left";
+        }
+        if (key === "left") {
+          $("#heading").offset({ left: leftOffset });
+          leftOffset--;
+          if (topOffset > 200 && leftOffset === 0) key = "up";
+        }
+        if (key === "up") {
+          $("#heading").offset({ top: topOffset });
+          topOffset--;
+          if (topOffset === 0 && leftOffset === 0) key = "right";
+        }
+      };
+      let id = setInterval(move, time / flag);
+      $("#heading").click(handler);
+    </script> -->
+    <!-- // function move_down() {
+      //   $("#heading").offset({ top: topOffset });
+      //   topOffset++;
+      //   if (topOffset > 200) topOffset = 200;
+      // }
+      // function move_left() {
+      //   $("#heading").offset({ down: downOffset });
+      //   leftOffset--;
+      //   if (leftOffset === 0) key = "up";
+      // } -->
+
+    <!-- <script>
+      $("html").click(function(event) {
+        $("#heading").offset({
+          left: event.pageX,
+          top: event.pageY
+        });
+      });
+    </script> -->
+  </body>
+</html>
