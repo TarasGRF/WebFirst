@@ -51,6 +51,7 @@
     "webpack-livereload-plugin": "^2.2.0"
   },
   "dependencies": {
+    "@frangiskos/mssql": "0.0.2",
     "lodash": "^4.17.15",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
