@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/garland/garland.scss"],"names":[],"mappings":"AAAA,OAAO,kBAAkB,WAAW,YAAY,uBAAuB,MAAM,YAAY,aAAa,aAAa,eAAe","file":"garland.css","sourcesContent":[".lampa{border-radius:50%;width:30px;height:30px;border:2px solid green}.elka{width:600px;height:500px;display:flex;flex-wrap:wrap;background-color:seagreen}\n"],"sourceRoot":""}
