@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@frangiskos/mssql": "0.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }
